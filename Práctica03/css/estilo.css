@@ -1,0 +1,51 @@
+.div1, .div3{
+    background-color: blue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Usuario{
+    float: left;
+    width: 100px;
+}
+p{
+    color: grey;
+}
+.Noticia1, .Noticia2{
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+header{
+    font-size: 40px;
+    font-family: Calibri;
+}
+.div2{
+    background-color: black;
+}
+.td1{
+    height: 50px;
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+li{
+    color: black;
+}
+button{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+fieldset{
+    background-color: aquamarine;
+    align-content: center;
+    margin: auto;
+}
+label{
+    color: grey;
+}
