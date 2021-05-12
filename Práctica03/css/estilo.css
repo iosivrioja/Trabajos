@@ -1,4 +1,4 @@
-.div1, .div3{
+.div1, .div4{
     background-color: blue;
 }
 a{
@@ -9,8 +9,12 @@ a{
     float: left;
     width: 100px;
 }
+.Usuario_foot{
+    float: left;
+}
 p{
-    color: grey;
+    color: black;
+    text-align: justify;
 }
 .Noticia1, .Noticia2{
     float: right;
@@ -33,19 +37,6 @@ header{
 li{
     color: black;
 }
-button{
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    padding: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-fieldset{
-    background-color: aquamarine;
-    align-content: center;
-    margin: auto;
-}
-label{
-    color: grey;
+.Menu{
+    float: right;
 }
