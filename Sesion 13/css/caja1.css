@@ -1,0 +1,32 @@
+header{
+    font-weight: bold;
+    font-size: 50px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+li{
+    color: white;
+    list-style: none;
+    display: inline;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: gray;
+}
+h1{
+    color: yellow;
+}
+img{
+    float: right;
+}
+p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Calibri;
+    color: gray;
+}
+footer{
+    background-color: yellow;
+    font-family: Calibri;
+    float: right;
+}
