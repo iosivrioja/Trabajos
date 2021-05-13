@@ -3,10 +3,23 @@
 }
 .div4{
     background-color: lightgreen;
+    margin: 20px 0px;
 }
 a{
     text-decoration: none;
     color: white;
+}
+.boton {
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: white;
+    border-radius: 50px;
+    margin: 30px 30px;
+}
+.Proyecto{
+    width: 100px;
+    height: 100px;
 }
 .Usuario{
     float: left;
