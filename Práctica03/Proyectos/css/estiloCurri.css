@@ -1,0 +1,48 @@
+body{
+    background-color: lightgreen;
+}
+header{
+    color: yellow;
+    font-family: Arial black;
+    font-size: 40px;
+    background-color: blue;
+}
+h1{
+    color: yellow;
+    background-color: blue;
+}
+a{
+    color: white;
+    text-align: right;
+    background-color: black;
+}
+p{
+    text-align: justify;
+}
+em{
+    font-style: italic;
+    font-weight: bold;
+}
+h2{
+    color: yellow;
+    font-family: Broadway;
+    background-color: blue;
+}
+table{
+    font-family: Tahoma;
+    text-align: justify;
+}
+th{
+    color:red;
+    font-weight: bold;
+    text-align: center;
+}
+div td li{
+    color:black;
+}
+footer{
+    color:white;
+    font-size: 10px;
+    text-align: center;
+    background-color: black;
+}

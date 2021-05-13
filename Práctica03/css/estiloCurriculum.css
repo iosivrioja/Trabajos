@@ -1,0 +1,65 @@
+.div1{
+    background-color: blue;
+}
+.div4{
+    background-color: lightgreen;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Usuario{
+    float: left;
+    width: 100px;
+    margin: 10px 30px;
+}
+#Perfil, #Experiencia, #Habilidades, #Educación{
+    color: blue;
+}
+p{
+    color: black;
+    text-align: justify;
+}
+.perfil{
+    text-align: justify;
+}
+header{
+    font-size: 40px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+.div2{
+    background-color: black;
+}
+.td1{
+    height: 50px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
+li{
+    color: black;
+}
+.aside{
+    float: right;
+    background-color: aquamarine;
+}
+.aside{
+    background-color: blue;
+    height: 536px;
+}
+.asideMenu, .asideEnlace{
+    background-color: lightgreen;
+    margin: 36px 40px;
+    font-family: Calibri;
+    font-size: 100%;
+}
+.footer_webmaster{
+    background-color: black;
+}
+.p_webmaster{
+    color: white;
+    text-align: center;
+    line-height: 200%;
+}
