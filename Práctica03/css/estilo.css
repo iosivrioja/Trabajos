@@ -1,5 +1,8 @@
-.div1, .div4{
+.div1{
     background-color: blue;
+}
+.div4{
+    background-color: lightgreen;
 }
 a{
     text-decoration: none;
@@ -8,22 +11,26 @@ a{
 .Usuario{
     float: left;
     width: 100px;
-}
-.Usuario_foot{
-    float: left;
+    margin: 10px 30px;
 }
 p{
     color: black;
     text-align: justify;
 }
-.Noticia1, .Noticia2{
+.Noticia{
+    text-align: justify;
+}
+.imgNoticia1, .imgNoticia2{
     float: right;
-    width: 150px;
-    height: 150px;
+    width: 90px;
+    height: 90px;
+    border-radius: 40%;
+    margin: 0px 30px;
 }
 header{
     font-size: 40px;
     font-family: Calibri;
+    font-weight: bold;
 }
 .div2{
     background-color: black;
@@ -33,10 +40,29 @@ header{
     width: 200px;
     color: white;
     text-align: center;
+    margin: 10px 10px;
 }
 li{
     color: black;
 }
-.Menu{
+.aside{
     float: right;
+    background-color: aquamarine;
+}
+.aside{
+    background-color: blue;
+}
+.asideMenu, .asideEnlace{
+    background-color: lightgreen;
+    margin: 36px 40px;
+    font-family: Calibri;
+    font-size: 100%;
+}
+.footer_webmaster{
+    background-color: black;
+}
+.p_webmaster{
+    color: white;
+    text-align: center;
+    line-height: 200%;
 }
