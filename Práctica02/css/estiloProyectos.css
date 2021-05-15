@@ -17,9 +17,12 @@ a{
     border-radius: 50px;
     margin: 30px 30px;
 }
+.TablaProyecto{
+    border-spacing: 30px 20px;
+}
 .Proyecto{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .Usuario{
     float: left;
@@ -54,7 +57,7 @@ li{
 }
 .aside{
     background-color: blue;
-    height: 612px;
+    height: 364px;
 }
 .asideMenu, .asideEnlace{
     background-color: lightgreen;

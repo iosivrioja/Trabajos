@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <div id="Contenedor">
+        <h2>Encuesta de Cine: Nominadas al Oscar 2018</h2>
+        <form id="Formulario1" name="Formulario1" method="POST" action="data.php">
+            <fieldset id="datos_personales">
+                <legend>Datos Personales</legend>
+                <label for="Nombre">Nombre</label><br>
+                <input type="text" name="Nombre" id="Nombre"><br>
+                <label for="Apellido">Apellido</label><br>
+                <input type="text" name="Apellido" id="Apellido"><br>
+                <label for="Dni">DNI</label><br>
+                <input type="text" name="Dni" id="Dni" maxlength="8"><br>
+                <label for="Edad">Edad</label><br>
+                <input type="number" name="Edad" id="Edad" size="2" maxlength="2"><br>
+                <label for="Sexo">Sexo</label><br>
+                <select name="Sexo" id="Sexo">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                </select>
+            </fieldset>
+            <fieldset id="mejor_película">
+                <legend>Mejor Película</legend>
+                <input type="radio" name="Mejor Película" id="mejor_pelicula_1" value="Mejor Película 1"> Call Me Be Your Name<br>
+                <input type="radio" name="Mejor Película" id="Mejor_pelicula_2" value="Mejor Película 2"> Dunkerque<br>
+                <input type="radio" name="Mejor Película" id="mejor_pelicula_3" value="Mejor Película 3"> Déjame Salir<br>
+            </fieldset>
+            <fieldset id="películas_que_no_he_visto">
+                <legend>Lista de Películas que no has Visto</legend>
+                <input type="checkbox" name="pelicula_1"> Película 01<br>
+                <input type="checkbox" name="pelicula_2"> Película 02<br>
+                <input type="checkbox" name="pelicula_3"> Película 03<br>
+                <input type="checkbox" name="pelicula_4"> Película 04<br>
+                <input type="checkbox" name="pelicula_5"> Película 05<br>
+            </fieldset>
+            <fieldset id="argumento">
+                <legend>Argumento de tu Película Favorita</legend>
+                <textarea name="Argumento" id="argumento" cols="50" rows="14"></textarea>
+            </fieldset><br>
+            <input type="reset" value="Borrar Formulario">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
