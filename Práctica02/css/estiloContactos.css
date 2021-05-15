@@ -1,0 +1,80 @@
+.div1{
+    background-color: blue;
+}
+form{
+    background-color: lightseagreen;
+    margin: 10px;
+    padding: 1em;
+    border: 1px;
+    border-radius: 1em;
+    width: 30%;
+}
+label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+textarea{
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+.div4{
+    background-color: lightgreen;
+}
+.formulario{
+    margin-top: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Usuario{
+    float: left;
+    width: 100px;
+    margin: 10px 30px;
+}
+p{
+    color: black;
+    text-align: justify;
+}
+header{
+    font-size: 40px;
+    font-family: Calibri;
+    font-weight: bold;
+}
+.div2{
+    background-color: black;
+}
+.td1{
+    height: 50px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 10px 10px;
+}
+li{
+    color: black;
+}
+.aside{
+    float: right;
+    background-color: aquamarine;
+}
+.aside{
+    background-color: blue;
+    height: 536px;
+}
+.asideMenu, .asideEnlace{
+    background-color: lightgreen;
+    margin: 36px 40px;
+    font-family: Calibri;
+    font-size: 100%;
+}
+.footer_webmaster{
+    background-color: black;
+}
+.p_webmaster{
+    color: white;
+    text-align: center;
+    line-height: 200%;
+}
