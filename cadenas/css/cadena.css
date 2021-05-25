@@ -1,0 +1,26 @@
+main{
+    width: 500px;
+    height: 500px;
+    background-color: lightcoral;
+    position: relative;
+    left: 400px;
+    
+}
+.salida{
+color:white;
+position: relative;
+left: 100px;
+top: 50px;
+}
+#contenedor_inputs{
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+.boton{
+    width: 100px;
+}
+#texto{
+    width: 300px;
+}
+

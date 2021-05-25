@@ -1,0 +1,16 @@
+body {
+    background-color:lightyellow;
+}
+#log {
+    color:yellow;background-color:red;
+}
+#div1 {
+    float:left;height:80px;width:210px;
+}
+#div2 {
+    float:left;height:220px;width:300px;background-color:lightblue;
+}
+img{
+    width: 200px;
+    height: 220px;
+}
