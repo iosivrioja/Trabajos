@@ -6,12 +6,20 @@ p{
 }
 
 @keyframes slidein {
-    from {
+    0% {
         margin-left: 100%;
         width: 300%;
     }
 
-    to {
+    30% {
+        background-color: lightslategrey;
+    }
+
+    60% {
+        background-color: royalblue;
+    }
+
+    90% {
         margin-left: 0%;
         width: 100%;
     }
