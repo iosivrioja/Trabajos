@@ -1,0 +1,14 @@
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin-left: 20px;
+}
+
+.rombo {
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+    margin-left: 20px;
+    transform: rotate(45deg);
+}
