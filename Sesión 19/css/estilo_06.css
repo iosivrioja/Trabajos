@@ -5,7 +5,7 @@ div {
     position: absolute;
     border-radius: 2rem 2rem 0 0;
     animation-name: animar;
-    animation-duration: 0.1s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
@@ -15,12 +15,12 @@ div {
         top: 0;
     }
     10% {
-        left: 5rem;
+        left: 10rem;
         top: 0rem;
         color: #9b59b6;
     }
     30% {
-        left: 5rem;
+        left: 10rem;
         top: 5rem;
         color: white;
     }
