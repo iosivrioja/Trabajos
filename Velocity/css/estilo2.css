@@ -1,0 +1,62 @@
+body {
+  background-color: #F5F7FA;
+}
+.demo-content {
+  position: relative;
+  padding: 70px 20px;
+  height: 1500px;
+}
+.inner-content {
+  font-family: "Roboto", Arial, sans-serif;
+  margin-top: 50px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #6c6f73;
+  text-align: center;
+  font-weight: 300;
+}
+.text {
+  display: block;
+  margin: 10px 0;
+  color: #6c6f73;
+  text-transform: uppercase;
+  font-family: "Roboto", Arial, sans-serif;
+}
+.ion {
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 1.8;
+  border-radius: 50%;
+  border: 1px solid #CCD1D9;
+  margin-right: auto;
+  margin-left: auto;
+}
+.icon {
+  color: #434A54;
+  text-decoration: none;
+  display: block;
+  margin-right: 5px;
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 11px;
+}
+.down {
+    top: 10px;
+    margin-top: 20px;
+}
+.up {
+    bottom: 10px;
+    margin-bottom: 20px;
+}
+.ion {
+  background-color: #fff;
+  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.1);
+}
