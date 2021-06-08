@@ -74,11 +74,11 @@ html,  body{
  }
 
  .rectangulo{
-     border: 5px solid white;
-     outline: 5px solid black;
-     width: 150px;
-     height: 150px;
-   position: fixed;   
+    border: 5px solid white;
+    outline: 5px solid black;
+    width: 150px;
+    height: 150px;
+    position: fixed;   
 }
  .rectangulo.der{
      background-color: rgb(136, 255, 0);
