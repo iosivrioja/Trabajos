@@ -1,0 +1,442 @@
+@font-face {
+    font-family: AfterNight;
+    src: url(../fuentes/AfterNight.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    font-family: Tw Cen MT;
+}
+
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal{
+    background: linear-gradient(0deg,white 70%, crimson 30%);
+    width: 600px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.modal_cerrar{
+    background: white;
+    position: absolute;
+    right: -20px;
+    color: crimson;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal_titulo{
+    color: white;
+    font-size: 40px;
+}
+
+.modal_mensaje{            
+   padding: 10px 30px;
+}
+
+.modal_botones{      
+    width: 100%;    
+   background: whitesmoke;
+   border-top:whitesmoke 1px;
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.boton{
+    background: white;
+    padding: 8px 30px;
+    color: crimson;
+    text-decoration: none;
+    border-radius: 25px;
+    border:1px solid crimson
+}
+
+.boton:hover{
+    background: crimson;
+    color: white;
+}
+
+/*HEADER*/
+
+.navColor {
+    background-color: red;
+}
+
+.buscarP {
+    display: none;
+}
+
+.logoPrincipal {
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 10px white;
+    border-radius: 100px;
+}
+
+.logoPrincipal:hover {
+    box-shadow: 2px 2px 10px white;
+}
+
+header h1 {
+    font-family: AfterNight;
+    margin: auto;
+    margin-left: 1%;
+    margin-right: 10%;
+    text-shadow: 10px 10px 10px white;
+    text-decoration: none;
+}
+
+header>nav>h1>a {
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>h1>a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>div>ul>li>a {
+    font-size: 150%;
+}
+
+.headerDerecha {
+    margin: auto;
+}
+
+
+/*HEADER*/
+
+
+/*SECTION*/
+
+.separadorVertical {
+    display: none;
+}
+
+.comunicadoBG {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*SECTION*/
+
+
+/*FOOTER*/
+
+.footerColor {
+    background-color: #cccccc;
+}
+
+.icon-facebook {
+    font-size: 40px;
+    color: #3b5998;
+}
+
+.icon-instagram {
+    font-size: 40px;
+    color: #e1306c;
+}
+
+.icon-twitter {
+    font-size: 40px;
+    color: #00acee;
+}
+
+.icon-youtube {
+    font-size: 40px;
+    color: #c4302b;
+}
+
+.contenidoSiguenos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoSiguenos>a {
+    margin: 4px;
+    text-decoration: none;
+}
+
+.contenidoSiguenos>a>span:hover {
+    color: black;
+}
+
+
+/*FOOTER*/
+
+
+/*TIENDA*/
+
+.card-header {
+    background-color: #fff97f80;
+    font-size: 100%;
+}
+
+.card-body {
+    border-color: rgb(108, 156, 195);
+}
+
+.carritoHeader {
+    background-color: #66d7d169;
+}
+
+div .indice {
+    font-size: 15px;
+}
+
+hr {
+    background-color: rgb(0, 0, 0);
+}
+
+.live__scroll .row {
+    display: block;
+    padding-left: 15px;
+}
+
+.live__scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.live__scroll .row {
+    display: block;
+}
+
+.live__scroll .live__scroll--box {
+    display: inline-block;
+    float: none;
+    border: 1px solid rgba(59, 59, 59, 0.973);
+}
+
+.carritoBody {
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+.carritoBody thead tr {
+    background-color: rgba(176, 107, 255, 0.39);
+}
+
+.cantidadProducto {
+    text-align: center;
+}
+
+.parteSubtotal {
+    display: flex;
+}
+
+.invalido {
+    border: 1px solid red;
+}
+
+
+/*TIENDA*/
+
+@media (max-width: 575.98px) {
+    /*HEADER*/
+    .elem_nav {
+        text-align: center;
+    }
+    .logoPrincipal {
+        margin: auto;
+        width: 100px;
+        height: 100px;
+    }
+    header h1 {
+        font-family: AfterNight;
+        margin: auto;
+        margin-top: 3%;
+        width: 100%;
+        text-align: center;
+    }
+    .logoPrincipal {
+        box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.438);
+        border-radius: 100px;
+    }
+    .buscarG {
+        display: none;
+    }
+    .buscarP {
+        display: inline-block;
+        width: 70%;
+        flex-direction: column;
+    }
+    .buscarP input {
+        float: left;
+        width: 60%;
+        margin: auto;
+        margin-top: 3.5%;
+    }
+    .buscarP button {
+        float: right;
+    }
+    /*HEADER*/
+    /*SECTION*/
+    .separadorVertical {
+        display: inline-block;
+    }
+    /*SECTION*/
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /*HEADER*/
+    header h1 {
+        margin: auto;
+    }
+    .logoPrincipal {
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.438);
+        border-radius: 100px;
+    }
+    .elem_nav {
+        text-align: center;
+    }
+    .buscarP {
+        display: block;
+    }
+    .buscarG {
+        display: none;
+    }
+    .button_nav {
+        margin: auto;
+        margin-top: 2%;
+        margin-right: 0px;
+    }
+    /*HEADER*/
+    /*SECTION*/
+    .separadorVertical {
+        display: inline-block;
+    }
+    /*SECTION*/
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*HEADER*/
+    .elem_nav {
+        text-align: center;
+    }
+    .buscarP {
+        display: block;
+    }
+    .buscarG {
+        display: none;
+    }
+    /*HEADER*/
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*HEADER*/
+    .buscarP {
+        display: none;
+    }
+    /*HEADER*/
+    /*SECTION*/
+    .textoBienvenida {
+        display: flex;
+        align-items: center;
+    }
+    /*SECTION*/
+}
+
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    /*HEADER*/
+    .buscarP {
+        display: none;
+    }
+    /*HEADER*/
+    /*SECTION*/
+    .textoBienvenida {
+        display: flex;
+        align-items: center;
+    }
+    /*SECTION*/
+}
+
+
+/*TIENDA*/
+
+@media (min-width: 766px) and (max-width: 1038px) {
+    /*SECTION*/
+    .tiendaVirtual {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tiendaVirtual>div {
+        max-width: none;
+    }
+    /*SECTION*/
+}
+
+@media (min-width: 548px) and (max-width: 734px) {
+    .arregloResponsive .card-body ul {
+        font-size: 150%;
+    }
+}
+
+@media (max-width: 734px) {
+    .live__scroll {
+        overflow-x: hidden;
+        overflow-y: none;
+    }
+    .live__scroll .live__scroll--box {
+        display: block;
+    }
+    .arregloResponsive {
+        max-width: none;
+    }
+    .live__scroll .row {
+        padding-left: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .arregloResponsive .card-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .arregloResponsive .card-body>img {
+        width: 20%;
+        height: 20%;
+    }
+}

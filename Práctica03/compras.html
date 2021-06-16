@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
-
-    <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
-
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/misEstilos.css">
+    <link rel="icon" href="img/icon.ico">
+    <title>Compras</title>
 </head>
 <body>
     <header style="padding-bottom: 50px; padding-top: 20px;">
@@ -24,10 +20,10 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="img/logo.jpeg" class="img-thumbnail" alt="...">
+                            <img src="img/logo.jpg" class="img-thumbnail" alt="...">
                         </div>
                         <div class="col-md-4" style="padding-top: 50px;">
-                            <h5>FERRETERIA LA CADENA</h5>
+                            <h1>FERRETERIA LA CADENA</h1>
                         </div>
                     </div>
                 </div>
@@ -56,25 +52,71 @@
                         aria-controls="v-tabs-product" aria-selected="false">Productos</a>
                     <a class="nav-link" id="v-tabs-proyect-tab" data-mdb-toggle="tab" href="#v-tabs-proyect" role="tab"
                         aria-controls="v-tabs-proyect" aria-selected="false">Proyectos</a>
-                    <a class="nav-link" id="v-tabs-sale-tab" data-mdb-toggle="tab" href="#v-tabs-sale" role="tab"
-                        aria-controls="v-tabs-sale" aria-selected="false">Compras</a>
+                    <a class="nav-link" id="v-tabs-proyect-tab" data-mdb-toggle="tab" href="#v-tabs-sale" role="tab"
+                        aria-controls="v-tabs-proyect" aria-selected="false">Compras</a>
                     <a class="nav-link" id="v-tabs-aboutus-tab" data-mdb-toggle="tab" href="#v-tabs-aboutus" role="tab"
                         aria-controls="v-tabs-aboutus" aria-selected="false">Nosotros</a>
                 </div>
                 <!-- Tab navs -->
             </div>
-        
             <div class="col-9">
                 <!-- Tab content -->
                 <div class="tab-content" id="v-tabs-tabContent">
                     <div class="tab-pane fade show active" id="v-tabs-home" role="tabpanel" aria-labelledby="v-tabs-home-tab">
-                        
+                        <div class="col-md-7">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="../img/icarrucel2.jpg" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/icarrucel1.jpg" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/icarrucel3.jpg" alt="Third slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/icarrucel4.jpg" alt="d">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/icarrucel5.jpg" alt="d2">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="v-tabs-product" role="tabpanel" aria-labelledby="v-tabs-product-tab">
-                        
+                        <center>
+                            <br>
+                            <img src="img/construccion.jpg" alt="">
+                            <br>
+                            <br>
+                            <br>
+                        </center>
                     </div>
                     <div class="tab-pane fade" id="v-tabs-proyect" role="tabpanel" aria-labelledby="v-tabs-proyect-tab">
-                        
+                        <center>
+                            <br>
+                            <img src="img/construccion.jpg" alt="">
+                            <br>
+                            <br>
+                            <br>
+                        </center>
                     </div>
                     <div class="tab-pane fade" id="v-tabs-sale" role="tabpanel" aria-labelledby="v-tabs-sale-tab">
                         <div class="row">
@@ -87,19 +129,19 @@
                                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel3.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel4.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel4.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
@@ -109,19 +151,19 @@
                                     <li class="list-group-item d-flex justify-content-between lh-condensed">
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel5.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel5.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
                                         <div>
                                             <h6 class="my-0">Producto</h6>
-                                            <img src="img/img3.jpg" width="150px" height="150px" />
+                                            <img src="img/icarrucel3.jpg" width="150px" height="150px" />
                                             <p class="text-muted">Descripcion</p>
                                             <p class="text-muted">S/. 40</p>
                                         </div>
@@ -274,13 +316,18 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-tabs-aboutus" role="tabpanel" aria-labelledby="v-tabs-aboutus-tab">
-                        
+                        <center>
+                            <br>
+                            <img src="img/construccion.jpg" alt="">
+                            <br>
+                            <br>
+                            <br>
+                        </center>
                     </div>
                 </div>
                 <!-- Tab content -->
             </div>
         </div>
-        
     </div>
     <footer class="section-footer border-top">
         <div class="container">
@@ -289,9 +336,9 @@
                     <aside class="col-md">
                         <h6 class="title">UBICACION</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion1</a></li>
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion2</a></li>
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion3</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion 1</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion 2</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Ubicacion 3</a></li>
                         </ul>
                     </aside>
                     <aside class="col-md">
@@ -306,9 +353,9 @@
                     <aside class="col-md">
                         <h6 class="title">HORARIOS DE ATENCIÓN</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario1</a></li>
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario2</a></li>
-                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario3</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario 1</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario 2</a></li>
+                            <li> <a href="https://bootstrap-ecommerce.com/page-components.html#">Horario 3</a></li>
                         </ul>
                     </aside>
                 </div> <!-- row.// -->
@@ -319,9 +366,9 @@
                     <p class="text-muted"> © 2021 Ferreteria La Cadena </p>
                 </div>
                 <div class="col-md-8 text-md-center">
-                    <span class="px-2">info@ferreteria_lac.com</span>
-                    <span class="px-2">+510749901</span>
-                    <span class="px-2">Calle 123, Av. Larco</span>
+                    <span class="px-2">En Construcción</span>
+                    <span class="px-2">En Construcción</span>
+                    <span class="px-2">En Construcción</span>
                 </div>
                 <div class="col-md-2 text-md-right text-muted">
                     <i class="fab fa-lg fa-cc-visa"></i>
@@ -331,5 +378,10 @@
             </section>
         </div><!-- //container -->
     </footer>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2@9.js"></script>
+    <script src="js/misJs.js"></script>
 </body>
 </html>
