@@ -1,0 +1,115 @@
+/*--HEADER--*/
+
+img.logoPrincipal{
+    width: 250px;
+    height: 100px;
+}
+.carrito {
+    width: 80px;
+    height: 80px;
+}
+.navColor {
+    background-color: #E9B215;
+}
+
+.buscarP {
+    display: none;
+}
+
+.logoPrincipal:hover {
+    box-shadow: 2px 2px 10px white;
+}
+
+header h1 {
+    margin: auto;
+    margin-left: 1%;
+    margin-right: 10%;
+    text-shadow: 10px 10px 10px white;
+    text-decoration: none;
+}
+
+header>nav>h1>a {
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>h1>a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>div>ul>li>a {
+    font-size: 150%;
+}
+
+.headerDerecha {
+    margin: auto;
+}
+
+body {
+    font-family: Tw Cen MT;
+}
+
+/*--SECTION--*/
+
+div.banner {
+    text-align: center;
+}
+img.img1 {
+    width: 1000px;
+    height: 500px;
+}
+ul.nav {
+    display: flex;
+    align-items: center;
+}
+h5, p.card-text {
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+div.btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--FOOTER--*/
+
+.footerColor {
+    background-color: #E9B215;
+}
+
+.icon-facebook {
+    font-size: 40px;
+    color: #3b5998;
+}
+
+.icon-instagram {
+    font-size: 40px;
+    color: #e1306c;
+}
+
+.icon-twitter {
+    font-size: 40px;
+    color: #00acee;
+}
+
+.icon-youtube {
+    font-size: 40px;
+    color: #c4302b;
+}
+
+.contenidoSiguenos {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoSiguenos>a {
+    margin: 4px;
+    text-decoration: none;
+}
+
+.contenidoSiguenos>a>span:hover {
+    color: black;
+}
+

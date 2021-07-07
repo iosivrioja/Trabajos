@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/misJs.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="iconos/fonts.css">
+    <link rel="stylesheet" href="css/estiloIndex.css">
+    <link rel="icon" href="img/icon.ico">
+    <title>Carrito</title>
+</head>
+<body onload="obtenerLocal()">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navColor">
+            <a href="index.html" class="logoPrincipal"> <img src="img/logo.jpg" alt="" class="logoPrincipal"></a>
+            <h1><a href="index.html"></a></h1>
+            <form class="form-inline my-1 my-lg-0 buscarP">
+                <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+            <button class="navbar-toggler button_nav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-1 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link elem_nav" href="index.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link elem_nav" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link elem_nav" href="crearCuenta.html">Mi Cuenta</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-1 my-lg-0 buscarG">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <a href="carrito.html" class="carrito"> <img src="https://img.pikbest.com/58pic/35/44/12/30j58PIC9pW5qYUcg77pq_PIC2018.gif!bw700" alt="" class="carrito"></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <br>
+        <div class="container-fluid">
+            <h2>Tienda Virtual</h2>
+            <div class="row tiendaVirtual">
+                <div class="col-md-8">
+                    <div class="card-header">
+                        <h4>Productos</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="live__scroll">
+                            <div class="row text-center">
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/gaseosa1.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Gaseosa</li>
+                                            <li>Coca Cola</li>
+                                            <li>$ 9.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Gaseosa Coca Cola', 9.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/gaseosa2.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Gaseosa</li>
+                                            <li>Inca Kola</li>
+                                            <li>$ 7.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Gaseosa Inca Kola', 7.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/gaseosa3.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Gaseosa</li>
+                                            <li>Pepsi</li>
+                                            <li>$ 30.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Gaseosa Pepsi', 30.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/agua1.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Agua Mineral</li>
+                                            <li>San Luis</li>
+                                            <li>$ 15.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Agua Mineral San Luis', 15.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/agua2.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Agua Mineral</li>
+                                            <li>Vital</li>
+                                            <li>$ 16.80</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Agua Mineral Vital', 16.80)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/agua3.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Agua Mineral</li>
+                                            <li>Cielo</li>
+                                            <li>$ 27.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Agua Mineral Cielo', 27.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/aceite.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Aceite</li>
+                                            <li>Primor</li>
+                                            <li>$ 5.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Aceite Primor', 5.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/cocoa.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Cocoa</li>
+                                            <li>Winter´s</li>
+                                            <li>$ 5.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Cocoa Winter´s', 5.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/sal1.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Sal</li>
+                                            <li>Marina</li>
+                                            <li>$ 1.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Sal Marina', 1.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/harina.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Harina</li>
+                                            <li>Grano de Oro</li>
+                                            <li>$ 6.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Harina Grano de Oro', 6.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/fideos.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Fideos</li>
+                                            <li>Bell</li>
+                                            <li>$ 5.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Fideos Bell', 5.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/atun.png" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Atún</li>
+                                            <li>En Grated</li>
+                                            <li>$ 1.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Atún En Grated', 1.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/brocoli.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Brócoli</li>
+                                            <li>Fresco</li>
+                                            <li>$ 5.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Brócoli Fresco', 5.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/cebolla.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Cebolla</li>
+                                            <li>Madura</li>
+                                            <li>$ 2.30</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Cebolla Madura', 2.30)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/naranja.png" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Naranja</li>
+                                            <li>Fuerte</li>
+                                            <li>$ 4.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Naranja Fuerte', 4.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/apio.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Apio</li>
+                                            <li>Fresco</li>
+                                            <li>$ 5.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Apio Fresco', 5.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/apio.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pera</li>
+                                            <li>De Agua</li>
+                                            <li>$ 2.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pera de Agua', 2.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/granadilla.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Granadilla</li>
+                                            <li>Fresca</li>
+                                            <li>$ 1.20</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Granadilla Fresca', 1.20)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/ramen.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Ramen</li>
+                                            <li>Ichiraku</li>
+                                            <li>$ 2.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Ramen Ichiraku', 2.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/raviol_queso.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Raviolitos</li>
+                                            <li>De Queso</li>
+                                            <li>$ 7.20</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Raviolitos de Queso', 7.20)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/fruta_congelada.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>El Frutero</li>
+                                            <li>Mix Vegetales</li>
+                                            <li>$ 6.90</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('El Frutero Mix Vegetales', 6.90)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/atun3.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Atún</li>
+                                            <li>Aleta Amarilla</li>
+                                            <li>$ 2.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Atún Aleta Amarilla', 2.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/jamonada.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Suiza</li>
+                                            <li>Jamonada Especial</li>
+                                            <li>$ 5.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Suiza Jamonada Especial', 5.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/ravioles.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Ravioles</li>
+                                            <li>De Verdura</li>
+                                            <li>$ 6.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Ravioles De Verdura', 6.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/jamonada.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Suiza</li>
+                                            <li>Jamonada Especial</li>
+                                            <li>$ 5.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Suiza Jamonada Especial', 5.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/mortadela.png" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>San Fernando</li>
+                                            <li>Mortadella</li>
+                                            <li>$ 4.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('San Fernando Mortadella', 4.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/queso.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Laive</li>
+                                            <li>Queso Fresco</li>
+                                            <li>$ 2.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Laive Queso Fresco', 2.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/queso2.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>El Latino</li>
+                                            <li>Queso Fresco</li>
+                                            <li>$ 5.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('El Latino Queso Fresco', 5.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/chorizo.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Razzeto</li>
+                                            <li>Chorizo</li>
+                                            <li>$ 8.20</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Razzeto Chorizo', 8.20)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/hotdog.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Suiza</li>
+                                            <li>Hot dog</li>
+                                            <li>$ 4.90</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Suiza Hot Dog', 4.90)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/pollo.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pollo</li>
+                                            <li>Grande</li>
+                                            <li>$ 12.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pollo Grande', 12.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/pollo3.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pollo</li>
+                                            <li>Mediano</li>
+                                            <li>$ 11.40</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pollo Mediano', 11.40)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/res2.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Carne Res</li>
+                                            <li>1 Kg</li>
+                                            <li>$ 10.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Carne Res 1 Kg', 10.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/pescado3.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pescado/Kg</li>
+                                            <li>Jurel</li>
+                                            <li>$ 8.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pescado Jurel', 8.00)">+</button>
+                                    </div>
+                                </div>                               
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/pollo2.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pollo</li>
+                                            <li>Pequeño</li>
+                                            <li>$ 10.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pollo Pequeño', 10.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/pescanova.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pescanova</li>
+                                            <li>Pejerrey</li>
+                                            <li>$ 10.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pescanova Pejerrey', 10.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/beterraga.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Betarraga</li>
+                                            <li>1 Kg</li>
+                                            <li>$ 10.00</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Betarraga 1 Kg', 10.00)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/naranja.png" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Naranja</li>
+                                            <li>Fuerte</li>
+                                            <li>$ 4.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Naranja Fuerte', 4.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/palta.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Palta</li>
+                                            <li>Madura</li>
+                                            <li>$ 6.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Palta Madura', 6.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/apio.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Pera</li>
+                                            <li>De Agua</li>
+                                            <li>$ 2.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Pera de Agua', 2.50)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/granadilla.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Granadilla</li>
+                                            <li>Fresca</li>
+                                            <li>$ 1.20</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Granadilla Fresca', 1.20)">+</button>
+                                    </div>
+                                </div>
+                                <div class="card mb-4 align-items-center col-3 live__scroll--box arregloResponsive">
+                                    <div class="card-body">
+                                        <img src="img/lechuga.jpg" class="card-img-top">
+                                        <ul class="list-unstyled mt-3 mb-4">
+                                            <li></li>
+                                            <li>Lechuga</li>
+                                            <li>Fresca</li>
+                                            <li>$ 4.50</li>
+                                        </ul>
+                                        <button class="btn btn-success agregar-carrito" data-id="1" onclick=" agregar('Lechuga Fresca', 4.50)">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-header carritoHeader">
+                        <h4>Carrito de compras</h4>
+                    </div>
+                    <div class="card-body carritoBody">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla">
+                            </tbody>
+                        </table>
+                        <hr>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col parteSubtotal">
+                                    <h5>Total:</h5>
+                                    <h5 class="col" id="SubTotal">----</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span type="text" class="input-group-text" id="inputGroup-sizing-default">Nombre y apellido</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="nombreApellido">
+                    </div>
+                </div>
+                <div class="col-sm"> <button class="btn btn-success" onclick="borrarTodo()" role="button">Nueva compra</button></div>
+            </div>
+            <br class="separadorVertical">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span type="email" class="input-group-text" id="inputGroup-sizing-default">Email</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" id="email">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <a href="opcionCompra.html"><button class="btn btn-success" onclick="enviarCompra()" role="button">Enviar compra</button></a>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4 footerColor">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Servicio al Cliente</h5>
+                    <div class="">
+                        <a href="">Políticas de Privacidad</a>
+                        <a href="">Términos y Condiciones</a>
+                        <a href="">Políticas de Cambio</a>
+                        <a href="">Soporte Técnico</a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 mr-auto my-md-4 my-0 mt-4 mb-1">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Mi Cuenta</h5>
+                    <div>
+                        <a href="registrar.html">Crear una Cuenta</a>
+                        <a href="">Cambiar mi Clave</a>
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Nuestra Empresa</h5>
+                    <div>
+                        <a href="">Despensa Peruana</a>
+                        <a href="">Responsabilidad Social</a>
+                        <a href="">Canal de Integridad</a>
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Redes Sociales</h5>
+                    <div class="contenidoSiguenos">
+                        <a href=""><span class="icon-facebook"></span></a>
+                        <a href=""><span class="icon-instagram"></a>
+                        <a href=""><span class="icon-twitter"></a>
+                        <a href=""><span class="icon-youtube"></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Nosotros</h5>
+                    <div>
+                        <a href="https://www.facebook.com/Jhenny.bazan/" target="_blank">Bazán Flores Yenifer</a>
+                        <a href="" target="_blank">Cabrera Hoyos Julián</a>
+                        <a href="https://www.facebook.com/iosivrubenkatari.riojajimenez/" target="_blank">Rioja Jiménez Iosiv</a>
+                        <a href="https://web.facebook.com/dambertwilfredo.torresvaldera.1/" target="_blank">Torres Valdera Dambert</a>
+                    </div>
+                </div>
+                <hr class="clearfix w-100 d-md-none">
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+            <a href="index.html">Despensa Peruana</a>
+        </div>
+    </footer>
+</body>
+</html>
